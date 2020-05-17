@@ -1,0 +1,261 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    margin: 0px;
+    padding: 0px;
+    background-color: #1d1d11;
+}
+
+/*ENTIRE GAME SECTION****************************************************************************/
+
+.game-area{
+    padding-top: 15px;
+    height: 530px;
+    width: 70%;
+    margin-left: 195px;
+    margin-top: 30px;
+    background-color: orange;
+    padding-bottom: 30px;
+}
+
+/*MAIN BUTTONS**********************************************************************************/
+
+button{
+    background-color: blue;
+    padding: 20px;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+}
+
+#continue-btn{
+    border: 2px solid black;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,.5);/*x axis, y axis, bluriness, spread, color*/
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: red;
+}
+
+.main-buttons{
+    text-align: center;
+    margin-top: 0px;
+}
+
+.main-button{
+    margin: 15px;
+}
+
+/*USER INPUTS**********************************************************************************/
+
+#first-number-input,
+#second-number-input,
+#third-number-input{
+    width: 85px;
+    height: 85px;
+    padding-left: 10px;
+    font-size: 30px;
+    border: 1px solid black;
+}
+
+.user-inputs{
+    text-align: center;
+}
+
+.inputs{
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-bottom: 10px;
+}
+
+#third-number-input{
+    margin-right: 0px;
+}
+
+#first-number-input{
+    margin-left: 0px;
+}
+
+/*NUMBER INCREASE GAME HEADER********************************************************************/
+
+h1{
+    color: blue;
+    margin-top: 5px;
+    padding-bottom: 10px;
+    text-align: center;
+    margin-bottom: 5px;
+    font-family: 'Courgette', cursive;
+    letter-spacing: 7.5px;
+    border-bottom: 2px solid black;
+}
+
+/*INSTRUCTIONS FOR THE USER**********************************************************************/
+
+.user-instructions{
+    float: left;
+    margin-right: 45px;
+    margin-left: 65px;
+    font-size: medium;
+    width: 60%;
+    height: 37%;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 8px;
+    margin-bottom: 40px;
+    padding-top: 5px;
+    font-family: 'Courgette', cursive;
+    box-shadow: 1.5px 1.5px 1.5px 1.5px rgba(0,0,0,.5);/*x axis, y axis, bluriness, spread, color*/
+}
+
+p{
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    word-wrap: break-word;
+    color: red;
+}
+
+.instructions,
+.task{
+    font-family: 'Courgette', cursive;
+    color: red;
+    font-weight: bold;
+    display: inline-block;
+}
+
+/*PRODUCT AND SUM OF THE RANDOM NUMBERS**********************************************************/
+
+.just-the-sum,
+.just-the-product{
+    display: inline-block;
+    width: min-content;
+    height: min-content;
+    visibility: hidden;
+}
+
+.sum,
+.product{
+    display: inline-block;
+    padding:30px;
+    font-size: x-large;
+    font-weight: bold;
+    font-family: 'Courgette', cursive;
+    color: black;
+}
+
+.just-the-sum{
+    margin-right: 5px;
+    float: left;
+    margin-left: 40px;
+    border: 2px solid blue;
+}
+
+.just-the-product{
+    border: 2px solid red;
+}
+
+.number1{
+    margin-left: 85px;
+}
+
+.number2{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/*TITLES ABOVE WHERE USER ENTERS NUMBERS*********************************************************/
+
+.number1,
+.number2,
+.number3{
+    display: inline-block;
+    width: 25%;
+    color: black;
+    font-family: 'Courgette', cursive;
+
+}
+
+/*BACKDROP FOR GAME MANUAL***********************************************************************/
+
+#backdrop {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.75);
+    z-index: 10;
+    pointer-events: none;
+    display: none;
+}
+  
+#backdrop.visible {
+    display: block;
+    pointer-events: all;
+}
+
+.instructionsManual{
+    border: 2px solid red;
+    padding: 15px;
+    text-align: center;
+    font-family: 'Courgette', cursive;
+    font-size: large;
+    font-weight: bold;
+    margin-top: 25px;
+    color: red;
+    margin-bottom: 100px;
+    margin-left: 260px;
+    margin-right: 260px;
+}
+
+.how-to-win,
+.restart,
+.goal{
+    color: blue;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: larger;
+}
+
+#exit{
+    background-color: red;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 10px;
+    margin-top: 10px;
+    border: 3px solid black;
+    border-radius: 8px;
+    font-family: 'Courgette', cursive;
+}
+
+#exit:hover{
+    color: red;
+    background-color: white;
+    border: 3px solid red;
+}
+
+/*KEEPING TRACK OF GAMES WON*********************************************************************/
+
+.games-won{
+    font-size: larger;
+    font-weight: bold;
+    padding: 0px;
+    letter-spacing: 1px;
+    padding: 5px;
+    margin-bottom: 5px;
+    color: purple;
+    font-family: 'Courgette', cursive;
+    text-align: center;
+}
+
+/************************************************************************************************/

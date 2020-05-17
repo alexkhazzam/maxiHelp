@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>title</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet"> 
+    <link rel = stylesheet href = "Styles.css">
+    <script src = "Main.js" defer></script>
+  </head>
+  <body>
+    <section class = "game-area">
+        <div id="backdrop">
+            <div class = instructionsManual><div class = "goal">Task:</div><br>You are a secret agent who is tasked with the job of breaking into a level 5 safe. To do so, you must first successfully break into the level 1-4 safes. The more safes you break into, the harder it is to break into, well, more safes.<br><br>
+            <div class = "how-to-win">How to break into a safe:</div><br>To break into a safe, you must correctly guess 3 numbers that add up and multiply to 2 random numbers. Here is an example: "The two random numbers are 5 and 4. Find 3 numbers that add up to 5 and multiply to 4." The random numbers get progressively larger as you reach higher levels.<br><br>
+            <div class = "restart">Restart The Game:</div><br>To restart the game, simply press the "Restart" button. You will only be able to press it once you have successfully beat the last round (level 5), or if you entered incorrect values. Otherwise, what's the point of restarting if you are on a winning streak?! 
+            <button id = "exit">Exit</button>  
+        </div>         
+        </div>
+        <h1>The Number-Increase Game!</h1>
+        <div class = "games-won">Games Won: 0</div>
+        <section class = "just-the-sum">
+            <p class = "sum"></p>
+        </section>
+        <section class = "user-instructions">
+            <p><div class = "instructions">Instructions:</div> You are a secret agent who is about to break into a level 1 safe. Unlock the combination and proceed to the next level. Reach level 5 to win...<br><br><div class = "task">Your task:</div> Find the 3 numbers that add up and multiply to 2 random numbers. The "Restart" button is only available to press if you have entered incorrect values or beat the game. Warning: as the level increases, so does the difficulty...Press "continue" to commence level 1 :</p>
+        </section>
+        <section class = "just-the-product">
+          <p class = "product"></p>
+      </section>
+      <section class = "numbers">
+        <P class = "number1">enter number</P>
+        <P class = "number2">enter number</P>
+        <P class = "number3">enter number</P>
+      </section>
+        <div class = "user-inputs">
+            <input type="number" id="first-number-input" class = "inputs" >
+            <input type="number" id="second-number-input" class = "inputs">
+            <input type="number" id="third-number-input" class = "inputs" >
+        </div>
+        <div class = "main-buttons">
+            <button id = "enterNumbers-btn" class = "main-button">Enter Numbers</button>
+            <button id = "continue-btn" class = "main-button">Continue</button>
+            <button id = "restart-btn" class = "main-button">Restart Game</button>
+            <button id = "gameManual-btn" class = "main-button">Game Manual</button>
+        </div>
+    </section>
+  </body>
+</html>
